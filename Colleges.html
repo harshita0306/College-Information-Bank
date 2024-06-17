@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.13.1/js/jquery.dataTables.min.js"></script> 
+    <link rel="stylesheet" href="sort-table.css">
+    <script>
+        $(function(){
+            $(document) .on("click",".transferrows",function(){
+                var getselectedvalues=$(".sortable input:checked").parents("tr").clone().appendTo($(".secondtable tbody").add(getselectedvalues));
+            })
+        })
+       
+
+       
+
+    </script>
+    <style>
+        body{
+    width:100%;
+            background-image:linear-gradient(rgba(216, 180, 238, 0.3),rgba(159, 231, 228, 0.7)),url("C:/Users/laksh/OneDrive/Desktop/dbpulse/images/boy-cute.gif");
+            background-repeat: no-repeat;
+            width:100%;
+            height:100vh;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+    
+    
+</head>
+<body>
+    
+    <center>
+        <h1>LIST OF COLLEGES</h1>
+        <hr>
+        <h3><u>Main Table</u></h3>
+        <table border="1" class="sortable" id="myTable">
+           
+            <thead>
+            
+                <tr>
+                    <th>Select</th>
+                    <th>Colleges</th>
+        
+                    <th>Avg-package(in lakhs)</th>
+                    <th>Highest package(in lakhs)</th>
+                    <th>Rating(out of 5)</th>
+                    <th>NAAC</th>
+                </tr>
+            </thead>
+            <tbody>
+        
+                <tr>
+                    
+                    <td><input type="checkbox"></td>
+
+                    <td>VASAVI</td>
+                    <td>8</td>
+                    <td>81</td>
+                    <td>4</td>
+                    <td>A++</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>JNTU</td>
+                    <td>6</td>
+                    <td>41</td>
+                    <td>4</td>
+                    <td>A++</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>BVRIT</td>
+                    <td>4.3</td>
+                    <td>26.5</td>
+                    <td>4</td>
+                    <td>A</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>MGIT</td>
+                    <td>4.3</td>
+                    <td>70</td>
+                    <td>3</td>
+                    <td>A+</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>VARDAMAN</td>
+                    <td>7.8</td>
+                    <td>21</td>
+                    <td>3.5</td>
+                    <td>A+</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>CVR</td>
+                    <td>7</td>
+                    <td>47</td>
+                    <td>3</td>
+                    <td>A</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>CBIT</td>
+                    <td>8</td>
+                    <td>54</td>
+                    <td>4</td>
+                    <td>A++</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>VNR</td>
+                    <td>9</td>
+                    <td>41.5</td>
+                    <td>4</td>
+                    <td>A++</td>
+
+                </tr>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>NARAYANAMMA</td>
+                    <td>8</td>
+                    <td>45.3</td>
+                    <td>4</td>
+                    <td>A++</td>
+
+                </tr>
+            </tbody>
+            
+            
+        </table>
+        <input type="button" value="Transfer Selected Rows" class="transferrows">
+        <hr/>
+        <h3>Selected Colleges</h3>
+        <table border="1" class="secondtable">
+            <tr>
+                <th>select</th>
+                <th>Colleges</th>
+                <th >Avg-package(in lakhs)</th>
+                <th >Highest package(in lakhs)</th>
+                <th >Rating(out of 5)</th>
+                <th>NAAC</th>
+                        
+                
+
+            </tr>
+
+        </table>
+        <a href="C:/Users/laksh/OneDrive/Desktop/dbpulse/images/sort.html">
+            <h6>sort</h6> </a>
+       
+
+    </center>
+    
+</body>
+</html>
